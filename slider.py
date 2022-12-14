@@ -59,7 +59,7 @@ class _SliderModel:
         else:
             try:
                 self.font = tk_font.Font(font=self.font)
-            except BaseException:
+            except Exception:
                 raise ValueError(f"{self.font} is not a valid font.")
 
         if self.font_size is None:
