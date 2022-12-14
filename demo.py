@@ -19,7 +19,7 @@ for prebuilt in prebuilt_defs:
         if key == "font":
             value = create_font_tuple(value)
         kwargs[key] = value
-    slider.Slider(root, **kwargs).pack(anchor=tk.W)
+    slider.Slider(root, **kwargs).pack(padx=20, pady=5, anchor=tk.W)
 
 # Mainloop
 root.mainloop()
